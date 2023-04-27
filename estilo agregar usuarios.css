@@ -1,0 +1,102 @@
+body{
+    background-image: url(login.jpg);
+    margin: 10;
+    padding: 100px;
+    box-sizing: border-box;
+   
+}
+
+
+.Agregar-Usuario{
+    width: 300px;
+    background: #36006c;
+    padding: 50px;
+    margin: auto;
+    font-family: sans-serif;
+    color: #ffffff;
+    box-shadow: 7px 13px 37px black;
+    }
+
+
+    }
+.Agregar-Usuario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.controls{
+    width: 100%;
+    background: #36006c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0089ff;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ffffff
+}
+.Agregar-Usuario .botons{
+    width: 107%;
+    background: #0a00ff;
+    border: none;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.botons:hover{   
+background-color: #0089ff;
+cursor: pointer;
+}
+
+section{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    }
+.form{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0089ff;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    width: 300px;
+    background: #36006c;
+    padding: 50px;
+    margin: auto;
+    font-family: sans-serif;
+    box-shadow: 7px 13px 37px black;
+}
+.email{
+    width: 100%;
+    background: #36006c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0089ff;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+.boton{
+  color: #ffffff;
+  font-size: 15px;
+  
+}
+.enviar {
+    width: 50%;
+    background: #0a00ff;
+    border: none;
+    padding: 3px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.enviar:hover{   
+background-color: #0089ff;
+cursor: pointer;
+}

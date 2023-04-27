@@ -1,0 +1,83 @@
+html 
+body{
+    background-image: url(login.jpg);
+    padding: 50px;
+
+}
+
+.contenedor {
+    width: 300px;
+    background: #36006c;
+    padding: 50px;
+    margin: auto;
+    font-family: sans-serif;
+    color: #ffffff;
+    box-shadow: 7px 13px 37px #000000;
+    
+    
+   
+}
+
+.texto-formulario p {
+    color: #f5b3e6;
+}
+
+.texto-formulario h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.texto-formulario p {
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    
+}
+
+.input label {
+    display: block;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin: 20px 0;
+    
+}
+.password-olvidada a {
+    font-family: sans-serif;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #f5b3e6;
+    margin-bottom:10px;
+}
+
+.input input {
+    width: 100%;
+    background: #36006c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0089ff;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ffffff
+}
+    }
+{
+   
+}
+.login[type="submit"] {
+    width: 107%;
+    background: #0a00ff;
+    border: none;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+
+.login [type="submit"]:hover{
+    cursor: pointer;
+    background-color: #0089ff;
+}

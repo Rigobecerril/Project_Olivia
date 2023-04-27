@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Fairlac</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css">
+    <link rel="stylesheet" href="styles.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Fairlac </span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Sabana de llenado</label>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500"> Sabana de llenado </div>
+            <h3>Información del usuario</h3>
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="folio">
+                <label class="mdl-textfield__label" for="sample1">Folio</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="date" id="fecha">
+                <label style="text-align:center" class="mdl-textfield__label" for="fecha">Fecha </label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="time" id="hora">
+                <label style="text-align:center" class="mdl-textfield__label" for="hora">Hora</label>
+              </div>
+            </form>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="usuario">
+              <label class="mdl-textfield__label" for="sample1">Nombre del usuario:</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="atendido_por">
+              <label class="mdl-textfield__label" for="sample1">Atendido por: </label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="folio">
+              <label class="mdl-textfield__label" for="sample1">Folio BANAVIM</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <!-- Right aligned menu below button -->
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="date" id="fecha2">
+                <label style="text-align:center" class="mdl-textfield__label" for="fecha2">Fecha nac.</label>  
+              </div>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="atendido_por">
+              <label class="mdl-textfield__label" for="sample1">Teléfono </label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="entidad">
+              <label class="mdl-textfield__label" for="sample1">Entidad </label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="municipio">
+              <label class="mdl-textfield__label" for="sample1">Municipio </label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="colonia">
+              <label class="mdl-textfield__label" for="sample1">Colonia</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="domicilio">
+              <label class="mdl-textfield__label" for="sample1">Domicilio</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="cp">
+              <label class="mdl-textfield__label" for="sample1">C.P.</label>
+            </div>
+            <!-- Floating Multiline Textfield -->
+            <div class="row">
+            
+                <div style="text-align:center" class="column">
+                <label for="label_edad">Edad:</label>
+                <button id="edad" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="edad">
+                  <li class="mdl-menu__item">0-14</li>
+                  <li class="mdl-menu__item">15-19</li>
+                  <li class="mdl-menu__item">20-24</li>
+                  <li class="mdl-menu__item">25-29 </li>
+                  <li class="mdl-menu__item">30-34</li>
+                  <li class="mdl-menu__item">35-39</li>
+                  <li class="mdl-menu__item">40-44</li>
+                  <li class="mdl-menu__item">45-49</li>
+                  <li class="mdl-menu__item">50-54</li>
+                  <li class="mdl-menu__item">55-59</li>
+                  <li class="mdl-menu__item">60-65</li>
+                  <li class="mdl-menu__item">65 o más</li>
+                  <li class="mdl-menu__item">No especifica</li>
+                </ul>
+              </div>
+              <div style="text-align:center" class="column">
+                <label for="label_civil">Estado civil:</label>
+                <button id="civil" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="civil">
+                  <li class="mdl-menu__item">Solter@</li>
+                  <li class="mdl-menu__item">Casad@</li>
+                  <li class="mdl-menu__item">Concubinato</li>
+                  <li class="mdl-menu__item">Unión libre</li>
+                  <li class="mdl-menu__item">Viud@</li>
+                  <li class="mdl-menu__item">Divorciad@</li>
+                  <li class="mdl-menu__item">Separad@</li>
+                  <li class="mdl-menu__item">Sociedad en convivencia</li>
+                  <li class="mdl-menu__item">No especifica</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div style="text-align:center" class="column">
+                <label for="label_instruccion">¿Sabe leer y escribir?:</label>
+                <button id="instruccion" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="instruccion">
+                  <li class="mdl-menu__item">Sabe leer y escribir</li>
+                  <li class="mdl-menu__item">No sabe leer pero si escribir</li>
+                  <li class="mdl-menu__item">No sabe escribir pero si leer</li>
+                  <li class="mdl-menu__item">No sabe leer y escribir</li>
+                </ul>
+              </div>
+              <div style="text-align:center" class="column">
+                <label for="label_escolaridad">Escolaridad</label>
+                <button id="escolaridad" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="escolaridad">
+                  <li class="mdl-menu__item">Preescolar</li>
+                  <li class="mdl-menu__item">Primaria</li>
+                  <li class="mdl-menu__item">Secundaria</li>
+                  <li class="mdl-menu__item">Preparatoria</li>
+                  <li class="mdl-menu__item">Profesional</li>
+                  <li class="mdl-menu__item">Posgrado</li>
+                  <li class="mdl-menu__item">No especifica</li>
+                  <li class="mdl-menu__item">Sin escolaridad</li>
+                </ul>
+              </div>
+              <div style="text-align:center" class="column">
+                <label for="label_sexo"> Sexo</label>
+                <button id="sexo" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="sexo">
+                  <li class="mdl-menu__item">Femenino</li>
+                  <li class="mdl-menu__item">Masculino</li>
+                  <li class="mdl-menu__item">Intersexual</li>
+                </ul>
+              </div>
+                
+              <div style="text-align:center" class="column">
+              <label for="label_Ocupación">Ocupación</label>
+              <button id="Ocupación" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="Ocupación">
+                <li class="mdl-menu__item">Ama de Casa</li>
+                <li class="mdl-menu__item">Estudiante</li>
+                <li class="mdl-menu__item">Emplead@</li>
+                <li class="mdl-menu__item">Emplead@ sin sueldo</li>
+                <li class="mdl-menu__item">Jubilad@</li>
+                <li class="mdl-menu__item">Sin Empleo</li> 
+                <li class="mdl-menu__item">No especifica</li>
+              </ul>
+            </div>
+            <div style="text-align:center" class="column">
+              <label for="label_Ingreso">Ingreso</label>
+              <button id="Ingreso" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="Ingreso">
+                <li class="mdl-menu__item">Menos de 1,500 </li>
+                <li class="mdl-menu__item">1,501 - 3,500</li>
+                <li class="mdl-menu__item">3,501 - 5,000</li>
+                <li class="mdl-menu__item">5,001 - 8,000</li>
+                <li class="mdl-menu__item">8,001 - 15,000</li>
+                <li class="mdl-menu__item">15,001 - 25,000</li>
+                <li class="mdl-menu__item">25,001 - 35,000</li>
+                <li class="mdl-menu__item">35,001 - 50,000</li>
+                <li class="mdl-menu__item">Más de 50,000</li>
+                <li class="mdl-menu__item">Ninguno</li>
+                <li class="mdl-menu__item">No especificó</li>
+              </ul>
+            </div>
+            <div style="text-align:center" class="column">
+              <label for="label_dividido">Ingreso Dividido</label>
+              <button id="dividido" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="dividido">
+                <li class="mdl-menu__item">Usuaria </li>
+                <li class="mdl-menu__item">Pareja</li>
+                <li class="mdl-menu__item">Padre</li>
+                <li class="mdl-menu__item">Madre</li>
+                <li class="mdl-menu__item">Hijo (a)</li>
+                <li class="mdl-menu__item">Hermano (a)</li>
+                <li class="mdl-menu__item">Otro</li>
+                <li class="mdl-menu__item">No especificó</li>
+              </ul>
+            </div>
+            <div style="text-align:center" class="column">
+              <label for="label_Seguro">Seguro</label>
+              <button id="Seguro" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="Seguro">
+                <li class="mdl-menu__item">IMSS</li>
+                <li class="mdl-menu__item">ISSSTE</li>
+                <li class="mdl-menu__item">SEDENA</li>
+                <li class="mdl-menu__item">PEMEX</li>
+                <li class="mdl-menu__item">INSABI</li>
+                <li class="mdl-menu__item">Seguro Privado</li>
+                <li class="mdl-menu__item">Gobierno Estatal</li>
+                <li class="mdl-menu__item">Otro</li>
+                <li class="mdl-menu__item">Ninguno</li>
+                <li class="mdl-menu__item">No especificó</li>
+              </ul>
+            </div>
+            <div style="text-align:center" class="column">
+              <label for="label_Hogar">Vivienda</label>
+              <button id="Hogar" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="Hogar">
+                <li class="mdl-menu__item">Prestada</li>
+                <li class="mdl-menu__item">Recibida como prestación</li>
+                <li class="mdl-menu__item">Rentada</li>
+                <li class="mdl-menu__item">Propia y pagando</li>
+                <li class="mdl-menu__item">Propia: en asentamiento irregular</li>
+                <li class="mdl-menu__item">Propia: en terreno ejidal </li>
+                <li class="mdl-menu__item">Propa: Totalmente pagada</li>
+                <li class="mdl-menu__item">Vivienda compartida</li>
+                <li class="mdl-menu__item">Otro</li>
+                <li class="mdl-menu__item">No especificó</li>
+              </ul>
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="mdl-textfield mdl-js-textfield">
+                <label for="label_continuar">¿Es posible continuar la entrevista?</label>
+                <button id="continuar" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-center mdl-js-menu mdl-js-ripple-effect" for="continuar">
+                  <li class="mdl-menu__item">Si</li>
+                  <li class="mdl-menu__item">No</li>
+                </ul>
+              </div>
+                <br>
+
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_Grupo">¿Pertenece a algún grupo étnico?</label>
+              <button id="Grupo" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="Grupo">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="Grupo"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_lengua">¿Hablante de Lengua indígena?</label>
+              <button id="lengua" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="lengua">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="Lengua"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_idioma">¿Hablan alguna lengua extranjera?</label>
+              <button id="idioma" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="idioma">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="idioma"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_migrante">¿Es migrante o transmigrante?</label>
+              <button id="migrante" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="migrante">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+                <br>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_sustancias">¿Presenta consumo de sustancias?</label>
+              <button id="sustancias" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="sustancias">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="Sustancias"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_gestacion">¿Está en estado de gestación?</label>
+              <button id="gestacion" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="gestacion">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="gestacion"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Meses de gestación</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_enfermedades">¿Presenta alguna enfermedad?</label>
+              <button id="enfermedades" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="enfermedades">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="enfermedades"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_social">¿Perteneces a algún programa social?</label>
+              <button id="social" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="social">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="social"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_discapacidad">¿Tienes alguna discapacidad?</label>
+              <button id="discapacidad" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="discapacidad">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="discapacidad"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_hijos">¿Hijos?</label>
+              <button id="hijos" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="hijos">
+                <li class="mdl-menu__item">Sin hijos</li>
+                <li class="mdl-menu__item">Hombres</li>
+                <li class="mdl-menu__item">Mujeres</li>
+                <li class="mdl-menu__item">Ambos</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_hijosdiscapacitados">¿Presentan alguna discapacidad?</label>
+              <button id="hijosdiscapacitados" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="hijosdiscapacitados">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="hijosdiscapacitados"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_edadhijos">¿Edad?</label>
+              <button id="edadhijos" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="edadhijos">
+                <li class="mdl-menu__item">Menos de 5 años</li>
+                <li class="mdl-menu__item">5 a 9 años</li>
+                <li class="mdl-menu__item">10 a 14 años</li>
+                <li class="mdl-menu__item">15 a 19 años</li>
+                <li class="mdl-menu__item">20 a 24 años</li>
+                <li class="mdl-menu__item">25 o más</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_escolaridad">¿Escolaridad?</label>
+              <button id="escolaridad" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="escolaridad">
+                <li class="mdl-menu__item">Guardería</li>
+                <li class="mdl-menu__item">Preescolar</li>
+                <li class="mdl-menu__item">Primaria</li>
+                <li class="mdl-menu__item">Secundaría</li>
+                <li class="mdl-menu__item">Bachillerato</li>
+                <li class="mdl-menu__item">Carrera Técnica</li>
+                <li class="mdl-menu__item">Licenciatura</li>
+                <li class="mdl-menu__item">Sin Instrucción</li>
+              </ul>
+            </div>
+            <br>    
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_violenciapareja">¿Violencia por su última pareja?</label>
+              <button id="violenciapareja" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="violenciapareja">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_violenciaotros">¿Otros?</label>
+              <button id="violenciaotros" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="violenciaotros">
+                <li class="mdl-menu__item">Expareja</li>
+                <li class="mdl-menu__item">Padre</li>
+                <li class="mdl-menu__item">Madre</li>
+                <li class="mdl-menu__item">Jefe/a</li>
+                <li class="mdl-menu__item">Compañero/a laboral</li>
+                <li class="mdl-menu__item">Otro/a</li>
+                <li class="mdl-menu__item">No especificó</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_tipoviolencia">¿Tipo de violencia?</label>
+              <button id="tipoviolencia" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="tipoviolencia">
+                <li class="mdl-menu__item">Psicológica</li>
+                <li class="mdl-menu__item">Física</li>
+                <li class="mdl-menu__item">Patrimonial</li>
+                <li class="mdl-menu__item">Económica</li>
+                <li class="mdl-menu__item">Sexual</li>
+                <li class="mdl-menu__item">Digital</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_ambiente">¿En qué ambiente se vive la violencia?</label>
+              <button id="ambiente" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="ambiente">
+                <li class="mdl-menu__item">Familiar</li>
+                <li class="mdl-menu__item">Laboral</li>
+                <li class="mdl-menu__item">En la comunidad</li>
+                <li class="mdl-menu__item">Institucional</li>
+                <li class="mdl-menu__item">Feminicida</li>
+                <li class="mdl-menu__item">Política de Genero</li>
+                <li class="mdl-menu__item">En el noviazgo</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_ultimo">¿Hace cuanto fue el último suceso?</label>
+              <button id="ultimo" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="ultimo">
+                <li class="mdl-menu__item">1 mes</li>
+                <li class="mdl-menu__item">3 meses</li>
+                <li class="mdl-menu__item">6 meses o más</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_viodis">¿Violencia por presentar alguna discapacidad?</label>
+              <button id="viodis" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="viodis">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_viodis1">¿Presenta alguna discapacidad a consecuencia de la violencia'</label>
+              <button id="viodis1" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="viodis1">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="viodis1"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_valoracion">¿Aplicación de instrumento para validación del riesgo?</label>
+              <button id="valoracion" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="valoracion">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_valoracion2">¿Cuál/es?</label>
+              <button id="valoracion2" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="valoracion2">
+                <li class="mdl-menu__item">Riesgo variable</li>
+                <li class="mdl-menu__item">Riesgo moderado</li>
+                <li class="mdl-menu__item">Riesgo grave</li>
+                <li class="mdl-menu__item">Riesgo extremo</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_lesion">¿Presenta alguna lesión?</label>
+              <button id="lesion" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="lesion">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="lesion1"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cuál/es?</label>
+            </div>    
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_lesion1">¿Tiempo de la lesión?</label>
+              <button id="lesion1" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="lesion1">
+                <li class="mdl-menu__item">Menor a 15 días</li>
+                <li class="mdl-menu__item">Mayor a 15 días</li>
+              </ul>
+            </div>
+            <br>    
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Nombre del agresor</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor1"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Edad</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor2"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Domicilio</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor3"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Grado académico</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor4"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Ocupación</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_agresor5">¿Consumo de sustancias?</label>
+              <button id="agresor5" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="agresor5">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor6"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cual/es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="agresor7"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Teléfono(s)</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="apoyo1"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Persona de apoyo</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="apoyo2"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Edad</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="apoyo3"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Domicilio</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="apoyo4"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Relación o Parentesco</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="apoyo5"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Tipo de Apoyo</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="apoyo6"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Teléfono</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <label for="label_proceso">¿Presenta algún trámite en proceso?</label>
+              <button id="proceso" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="proceso">
+                <li class="mdl-menu__item">Si</li>
+                <li class="mdl-menu__item">No</li>
+              </ul>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso1"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Dónde?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso2"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿C.I No.?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso3"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Tipo de medidas?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso4"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Vigencia?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso5"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿No. Expediente?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso6"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Lugar de canalización?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso7"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Instancia de Gobierno</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso8"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Asociación Civil?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso7"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Acompañamiento?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso8"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Quién es?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="proceso8"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Requiere medidas de protección?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="comp"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Cómo se enteró del servicio?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="comp2"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Asesoría jurídica?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="comp3"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Asesoría psicológica?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="comp4"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Trabajo Social?</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="1" id="comp5"></textarea>
+              <label class="mdl-textfield__label" for="sample5">¿Consejería?</label>
+            </div>
+                
+            </div>
+          <!--EJEMPLO BOXES --> 
+            <div style="background-color:ghostwhite;">  
+            <div class="row" style="background-color:#DCD0FF;">
+                                            <div class="column" >
+                <i class="material-icons">arrow_drop_down</i>
+                </div>  
+            <div class="column" style="text-align:center"  >
+                 Observaciones 
+                </div>  
+                <div class="column" ></div>  
+                </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="3" id="obs_ts"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Observaciones trabajo social</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="3" id="obs_jur"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Observaciones juridica</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="3" id="obs_psic"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Observaciones psicológicas</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="3" id="seg"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Seguimientos</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows="3" id="num_at"></textarea>
+              <label class="mdl-textfield__label" for="sample5">Número de atención</label>
+            </div>
+          </div>
+            <!--TERMINA BOXES -->    
+             </div> 
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li>
+                <a href="#">Help</a>
+              </li>
+              <li>
+                <a href="#">Privacy and Terms</a>
+              </li>
+              <li>
+                <a href="#">User Agreement</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/article/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

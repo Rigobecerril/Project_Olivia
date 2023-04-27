@@ -1,0 +1,51 @@
+body {
+    
+    background-image: url(login.jpg);
+    font-family: sans-serif, cursive;
+    text-align: center;
+    display: inline;
+}
+h5{
+    height: 0vh;
+   }
+h6{
+    height: 10vh;}
+
+
+a {
+    border-radius: 10px;
+    border: none;
+    }
+
+a[type="button"]
+
+a{  
+    
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: rgb(243, 148, 255);
+    
+}
+button{
+    font-size: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 10%;
+    height: 5vh;
+    margin: 610px;
+    margin-right: -250px;
+    margin-bottom: 4px;
+    margin-left: 258px;}
+
+article{
+    text-align: justify;
+    column-rule-color: aqua;
+    margin-left: 350px;
+    margin-top: 10px;
+    margin-right: 10px;}
+
+
+
+
