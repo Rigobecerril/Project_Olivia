@@ -9,12 +9,12 @@ body{
 
 .Agregar-Usuario{
     width: 300px;
-    background: #36006c;
+    background: #6a6a6a;
     padding: 50px;
     margin: auto;
     font-family: sans-serif;
     color: #ffffff;
-    box-shadow: 7px 13px 37px black;
+    box-shadow: 7px 13px 37px #000000;
     }
 
 
@@ -27,25 +27,25 @@ body{
 }
 .controls{
     width: 100%;
-    background: #36006c;
+    background: #484848;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #0089ff;
+    border: 1px solid #000000;
     font-family: sans-serif;
     font-size: 18px;
     color: #ffffff
 }
 .Agregar-Usuario .botons{
     width: 107%;
-    background: #0a00ff;
+    background: #ffffff;
     padding: 12px;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
 }
 
 .botons:hover{   
-background-color: #0089ff;
+background-color: #89c8ff;
 cursor: pointer;
 }
 
