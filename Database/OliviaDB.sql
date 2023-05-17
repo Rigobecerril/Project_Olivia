@@ -10,7 +10,8 @@ CREATE TABLE if not exists Caso (
 );
 
 CREATE TABLE if not exists UsuarioInformacionGeneral (
-    folio_id VARCHAR(255) REFERENCES Caso (folio_id),
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    folio_id VARCHAR(255) REFERENCES Caso (folio_id) NOT NULL,
     NombreUsuario VARCHAR(255),
     FechaNacimiento DATE,
     Telefono INTEGER,
@@ -24,6 +25,7 @@ CREATE TABLE if not exists UsuarioInformacionGeneral (
 );
 
 CREATE TABLE if not exists UsuarioInformacionSociodemografica (
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
     folio_id VARCHAR(255) REFERENCES Caso (folio_id),
     Edad VARCHAR(255),
     EstadoCivil VARCHAR(255),
