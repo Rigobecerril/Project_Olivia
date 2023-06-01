@@ -29,13 +29,13 @@ color: #33347E;
 
 
 .contenedor {
-    width: 501px;
+    width: 400px;
     background: #F3F1FF;
-    padding: 50px;
-    margin: auto;
-    font-family: serif;
+    padding: 20px;
+    font-family: sans-serif;
     color: #ffffff;
-    box-shadow: 7px 13px 37px #000000;
+    box-shadow: 7px 13px 37px #D0C8F6;
+    margin: 50px 385px;
     
     
     
@@ -78,25 +78,23 @@ color: #33347E;
 }
 
 .input input {
-    width: 100%;
+    width: 95%;
     background: #F3F1FF;
     padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
+    border-radius: 3px;
     border: 1px solid #B0A2F9;
     font-family: sans-serif;
     font-size: 18px;
-    color: #000000;
 }
     }
 {
    
 }
 .login[type="submit"] {
-    width: 107%;
+    width: 100%;
     background: #D0C8F6;
     border: none;
-    padding: 12px;
+    padding: 10px;
     color: #000000;
     font-size: 16px;
     
