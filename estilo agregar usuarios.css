@@ -1,7 +1,6 @@
 body{
 
     background:  transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%) 0% 0% no-repeat padding-box;
-    padding: 10px;
     opacity: 1;
     height: 621px;
 
@@ -63,8 +62,8 @@ section{
     color: #000000;
     width: 310px;
     background: #F3F1FF;
-    padding: 40px;
-    margin: 100px 478px;
+    padding: 56px;
+    margin: 99px 468px;
     font-family: sans-serif;
     box-shadow: 7px 13px 37px #D0C8F6;
 }
