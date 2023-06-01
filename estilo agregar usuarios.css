@@ -81,6 +81,7 @@ section{
 .boton{
   color: #000000;
   font-size: 15px;
+  text-decoration-line: none;
   
 }
 .enviar {

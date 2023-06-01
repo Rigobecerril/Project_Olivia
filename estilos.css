@@ -106,6 +106,7 @@ transform: scale(1.01);
     text-align: center;
     color: #000000;
     margin-bottom:10px;
+    text-decoration-line: none;
 }
 
 .input input {
