@@ -1,7 +1,13 @@
 html 
 body{
+    /* Layout Properties */
+top: 0px;
+left: 0px;
+width: 1180px;
+height: 750px;
     background:  transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%) 0% 0% no-repeat padding-box;
     padding: 50px;
+    opacity: 1;
 
 }
 
