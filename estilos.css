@@ -59,13 +59,14 @@ transform: scale(1.01);
 
 
 .contenedor {
-    width: 400px;
+    width: 450px;
     background: #F3F1FF;
-    padding: 20px;
+    padding: 40px;
     font-family: sans-serif;
     color: #ffffff;
     box-shadow: 7px 13px 37px #D0C8F6;
-    margin: 50px 385px;
+    margin: 1px 414px;
+    height: 486px;
     
     
     
