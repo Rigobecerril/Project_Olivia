@@ -58,19 +58,19 @@ section{
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     }
 .form{
     width: 100%;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #0089ff;
+    border: 1px solid #000000;
     font-family: sans-serif;
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     width: 300px;
-    background: #36006c;
+    background: #F3F1FF;
     padding: 50px;
     margin: auto;
     font-family: sans-serif;
@@ -78,30 +78,30 @@ section{
 }
 .email{
     width: 100%;
-    background: #36006c;
+    background: #F3F1FF;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #0089ff;
+    border: 1px solid #B0A2F9;
     font-family: sans-serif;
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
 }
 .boton{
-  color: #ffffff;
+  color: #000000;
   font-size: 15px;
   
 }
 .enviar {
     width: 50%;
-    background: #0a00ff;
+    background:#D0C8F6;
     border: none;
     padding: 3px;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
 }
 .enviar:hover{   
-background-color: #0089ff;
+background-color: #B0A2F9;
 cursor: pointer;
 }
 
