@@ -1,26 +1,34 @@
 html 
 body{
-background: transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%);
+background: transparent linear-gradient(180deg, #E8F6FF 10%, #BEB2FB 100%);
 opacity: 1;
-padding: 60px
+height: 641px
 
 }
 
 .olivia {
 height: 150px;
-padding: 201px 438px;
+margin: 196px 437px
 }
 .fairlac{
 width: 140px;
+margin: 10px
 }
 .footer{
 background-color: #D0C8F6;
-width: 1356px;
-padding-top: 20px;
+
+
+
+
 }
 .h4{
 font: normal normal normal 18px/23px Outfit;
 color: #33347E;
+margin: 10px;
+text-decoration-line: none;
+
+    
+
 }
 
 
