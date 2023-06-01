@@ -1,16 +1,12 @@
 body{
-    /* Layout Properties */
-top: 0px;
-left: 0px;
-width: 1180px;
-height: 750px;
+
     background:  transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%) 0% 0% no-repeat padding-box;
-    padding: 50px;
+    padding: 10px;
     opacity: 1;
+    height: 621px;
 
    
 }
-
 
 .Agregar-Usuario{
     width: 300px;
@@ -20,7 +16,8 @@ height: 750px;
     font-family: sans-serif;
     color: #ffffff;
     box-shadow: 7px 13px 37px #D0C8F6;
-    }
+    top
+}
 
 
     
@@ -55,22 +52,19 @@ cursor: pointer;
 }
 
 section{
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 20px;
     text-align: center;
     color: #000000;
     }
 .form{
-    padding: 10px;
     border-radius: 4px;
-    margin-bottom: 16px;
     font-family: sans-serif;
     font-size: 18px;
     color: #000000;
-    width: 300px;
+    width: 310px;
     background: #F3F1FF;
-    padding: 50px;
-    margin: auto;
+    padding: 40px;
+    margin: 120px 479px;
     font-family: sans-serif;
     box-shadow: 7px 13px 37px #D0C8F6;
 }
@@ -94,7 +88,7 @@ section{
     width: 50%;
     background:#D0C8F6;
     border: none;
-    padding: 3px;
+    padding: 4px;
     color: #000000;
     font-size: 16px;
 }
@@ -166,3 +160,40 @@ cursor: pointer;
 .content-modal .btn-cerrar label:hover{
     background-color: #0a00ff
 }
+
+.fairlac{
+width: 140px;
+
+}
+.fairlac{
+transition: 0.5s;
+object-fit: cover;
+    
+}
+.fairlac:hover{
+transform: scale(1.1);
+    
+}
+.footer{
+background-color: #D0C8F6;
+height: 82px;
+width: 1348px;
+}
+
+.htransp{
+font: normal normal normal 18px/23px Outfit;
+color: #33347E;
+margin: 15px;
+text-decoration-line: none;
+}
+.transp{
+text-align: end;
+padding: 18px ;
+text-align: left
+}
+
+
+
+
+
+
