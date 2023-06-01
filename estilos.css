@@ -1,6 +1,6 @@
 html 
 body{
-    background-image: url(gris.jpg);
+    background:  transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%) 0% 0% no-repeat padding-box;
     padding: 50px;
 
 }
