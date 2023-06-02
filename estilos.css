@@ -62,7 +62,7 @@ transform: scale(1.01);
     width: 450px;
     background: #F3F1FF;
     padding: 40px;
-    font-family: sans-serif;
+    font: normal normal normal 18px/23px Outfit;
     color: #ffffff;
     box-shadow: 7px 13px 37px #D0C8F6;
     margin: 1px 414px;
@@ -79,13 +79,13 @@ transform: scale(1.01);
 
 .texto-formulario h2 {
     font-size: 30px;
-    font-family: sans-serif;
+    font: normal normal normal 30px/23px Outfit;
     text-align: center;
     color: #000000;
 }
 
 .texto-formulario p {
-    font-family: sans-serif;
+    font: normal normal normal 18px/23px Outfit;
     font-size: 17px;
     text-align: center;
     
@@ -94,12 +94,12 @@ transform: scale(1.01);
 .input label {
     display: block;
     font-size: 17px;
-    font-family: sans-serif;
+   font: normal normal normal 18px/23px Outfit;
     margin: 20px 0;
     color: #000000;
 }
 .password-olvidada a {
-    font-family: sans-serif;
+    font: normal normal normal 18px/23px Outfit;
     display: block;
     margin-top: 10px;
     font-size: 15px;
@@ -115,7 +115,7 @@ transform: scale(1.01);
     padding: 10px;
     border-radius: 3px;
     border: 1px solid #B0A2F9;
-    font-family: sans-serif;
+    font: normal normal normal 18px/23px Outfit;
     font-size: 18px;
 }
     }
