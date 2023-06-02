@@ -1,20 +1,11 @@
 body {
     
-    background:  transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%) 0% 0% no-repeat padding-box;
-    padding: 50px;
+   background: transparent linear-gradient(180deg, #E8F6FF 10%, #BEB2FB 100%);
     opacity: 1;
     font-family: sans-serif, cursive;
     text-align: center;
-    display: inline;
+    display: contents;
      /* Layout Properties */
-top: 0px;
-left: 0px;
-width: 1180px;
-height: 750px;
-    background:  transparent linear-gradient(180deg, #E8F6FF 0%, #BEB2FB 100%) 0% 0% no-repeat padding-box;
-    padding: 50px;
-    opacity: 1;
-
 }
 h5{
     height: 0vh;

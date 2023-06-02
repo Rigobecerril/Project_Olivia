@@ -2,8 +2,8 @@ html
 body{
 background: transparent linear-gradient(180deg, #E8F6FF 10%, #BEB2FB 100%);
 opacity: 1;
-height: 641px
-
+height: 612px;
+margin: auto;
 }
 
 .olivia {
@@ -24,8 +24,8 @@ transform: scale(1.1);
 }
 .footer{
 background-color: #D0C8F6;
-height: 81px;
-width: 1358px;
+height: 82px;
+width: 1366px;
 }
 
 .htransp{
@@ -47,12 +47,13 @@ margin: 10px;
 text-decoration-line: none;
 }
 .ingresar{
+
 text-align: right; 
 transition: 0.3s;
-object-fit: cover;
+
 }
 .ingresar:hover{
-transform: scale(1.01);
+transform: scale(1.0007);
 }
 
 
