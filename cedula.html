@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cédula</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+<style>
+
+  body{
+background: #ffffff;
+margin: 0;
+}
+.fairlac{
+width: 140px;
+}
+.fairlac{
+transition: 0.5s;
+object-fit: cover;
+}
+.fairlac:hover{
+transform: scale(1.1);      
+}
+.footer{
+background-color: #D0C8F6;
+height: 85px;
+width: 1366px;    
+}
+.boton{
+text-decoration-line: none; 
+color: #33347E;    
+}        
+.htransp{
+font: normal normal normal 18px/23px Outfit;
+color: #33347E;
+margin: 30px;
+text-decoration-line: none;
+padding-left: 1008px
+}
+.transp{
+text-align: end;
+padding: 19px ;
+text-align: left
+}
+    .header{
+background-color: #D4EEFE;
+height: 85px;
+width: 1366px;
+}
+    .imagenolivia{
+        width: 140px;
+        margin: 20px;
+        padding-left: 50px
+    }
+    .imagenolivia{
+transition: 0.5s;
+object-fit: cover;
+}
+.imagenolivia:hover{
+transform: scale(1.1);      
+}
+    .icon{
+        width: 45px;
+        margin: 20px;
+        padding-left: 980px
+    }
+    .cedula{
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-25) var(--unnamed-font-family-outfit);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+text-align: left;
+font: normal normal normal 20px/25px Outfit;
+letter-spacing: 0px;
+color: #000000;
+margin: 20px;
+padding-left: 60px
+    }   
+    .folio{
+        background: #E0DBFA;
+        padding: 10px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 20px;
+        }
+    .folio1{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-25) var(--unnamed-font-family-outfit);
+        margin: 0px;
+        font: normal normal normal 20px/25px Outfit;
+        border: none;
+        }
+    .fecha{
+        margin-left: 1000px;
+        font: normal normal normal 20px/25px Outfit;
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-25) var(--unnamed-font-family-outfit);
+        border: none;
+            }
+    .hora{
+        margin-left: 1000px;
+        font: normal normal normal 20px/25px Outfit;
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-25) var(--unnamed-font-family-outfit);
+        margin-top: 10px;
+        border: none;
+    }
+    .enviar {
+    width: 36.99%;
+    background:#D0C8F6;
+    border: none;
+    padding: 8px;
+    color: #000000;
+    font-size: 16px;
+    font: normal normal normal 15px/18px Outfit;
+    margin: 20px
+    
+}
+    .enviar:hover{   
+background-color: #B0A2F9;
+cursor: pointer;
+}
+    .tabladerecha{
+        background: #F3F1FF;
+        padding: 10px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 20px;
+        border: 1px solid #B0A2F9;
+    }
+    .fa-home{
+        background: #F3F1FF;
+        font: normal normal normal 15px/18px Outfit;  
+        border: 1px solid #B0A2F9;
+        text-decoration-line: none;
+        color: #000000;
+        padding: 20px 10px;
+        }
+    .up{
+        background: #F3F1FF;
+    }
+    ul.tabs li a{
+    background:#D0C8F6;
+    color: #000000;
+    font-size: 18px;
+    display: block;
+    padding: 5vh;
+    width: 365px;
+    }
+    ul.tabs li a:hover{   
+background-color: #ffffff;
+        cursor: pointer;}
+    .active{
+        background:#ffffff; 
+    }
+    ul.tabs li a .tab-text{
+        margin-left: 8px;
+    }
+        
+</style> 
+</head>
+<header class="header">
+    <img class="imagenolivia" src="img/Logo%20OLIVIA">
+    <img class="icon" src="img/circle-user-regular.svg">
+</header>
+
+<body>
+       
+<h4 class="cedula">Cédula</h4>
+<div class="folio">
+<nav>
+   <input class="folio1" type="name" placeholder="Folio:" class="folio1" style="font-size: 15px"> 
+   <input class="fecha" style="font-size: 15px" type="date" name="" id="">
+   <input class="hora" style="font-size: 15px" type="time" name="" id="">
+   <input class="folio1" type="name" placeholder="Nombre Completo:" class="folio1" style="font-size: 15px">
+   <a href="">
+   <button class="enviar">Expediente</button>
+   </a>
+   <a href="sabana.html">
+   <button class="enviar">Sábana</button>
+   </a>
+</nav>
+</div>
+<div class="tabladerecha">
+<div class="up">
+<ul class="tabs">
+<li><a href="tab1" class="fa-home"><span></span><span class="tab-text">0.Información del Expediente</span></a></li>
+<li><a href="#tab2" class="fa-home"><span></span><span class="tab-text">1.Requerimientos Específicos</span></a></li>
+<li><a href="#tab3" class="fa-home"><span ></span><span class="tab-text">2.Información General y de Contacto</span></a></li>
+<li><a href="#tab4" class="fa-home"><span></span><span class="tab-text">3.Información Sociodemográfica</span></a></li>
+<li><a href="#tab5" class="fa-home"><span></span><span class="tab-text">4.Datos de Empleo</span></a></li>
+<li><a href="#tab6" class="fa-home"><span></span><span class="tab-text">5.Interseccionalidad</span></a></li>
+<li><a href="#tab7" class="fa-home"><span></span><span class="tab-text">6.Motivo de Atención</span></a></li>
+<li><a href="#tab8" class="fa-home"><span></span><span class="tab-text">7.Antecedentes de Violencia</span></a></li>
+<li><a href="#tab9" class="fa-home"><span></span><span class="tab-text">8.Información General de la Persona Agresora</span></a></li>
+<li><a href="#tab10" class="fa-home"><span></span><span class="tab-text">9.Información Sociodemográfica PA</span></a></li>
+<li><a href="#tab11" class="fa-home"><span></span><span class="tab-text">10.Rasgos Fisicos de la Persona Agresora</span></a></li>
+<li><a href="#tab12" class="fa-home"><span></span><span class="tab-text">11.Red de Apoyo</span></a></li>
+<li><a href="#tab13" class="fa-home"><span></span><span class="tab-text">12.Trabajo Social</span></a></li>
+<li><a href="#tab14" class="fa-home"><span></span><span class="tab-text">13.Atención Psicológica</span></a></li>
+<li><a href="#tab15" class="fa-home"><span></span><span class="tab-text">14.Atención Jurídica</span></a></li>
+<li><a href="#tab16" class="fa-home"><span></span><span class="tab-text">15.Clasificación de Violencia</span></a></li>
+<li><a href="#tab17" class="fa-home"><span></span><span class="tab-text">16.Acciones Realizadas</span></a></li>
+</ul>
+
+<div class="secciones">
+    <article id="tab1"><h1>0.1</h1></article>
+     <article id="tab2"><h1>0.2</h1></article>
+     <article id="tab3"><h1>0.3</h1></article>
+     <article id="tab4"><h1>0.4</h1></article>
+     <article id="tab5"><h1>0.5</h1></article>
+     <article id="tab6"><h1>0.6</h1></article>
+     <article id="tab7"><h1>0.7</h1></article>
+     <article id="tab8"><h1>0.8</h1></article>
+     <article id="tab9"><h1>0.9</h1></article>
+     <article id="tab10"><h1>10</h1></article>
+     <article id="tab11"><h1>11</h1></article>
+     <article id="tab12"><h1>12</h1></article>
+     <article id="tab13"><h1>13</h1></article>
+     <article id="tab14"><h1>14</h1></article>
+     <article id="tab15"><h1>15</h1></article>
+     <article id="tab16"><h1>16</h1></article>
+     <article id="tab16"><h1>17</h1></article>
+    </div>
+    </div>
+    </div>
+
+
+
+<footer class="footer">
+<div class="transp">
+<img src="./img/Logo%20FAIR%20LAC" class="fairlac">
+<a src="#" class="htransp">Transparencia</a>
+</div>
+</footer>
+</body>
+
+</html>

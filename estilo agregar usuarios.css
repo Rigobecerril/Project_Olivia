@@ -21,7 +21,7 @@ body{
 
     
 .Agregar-Usuario h4 {
-    font-size: 22px;
+    font-size: 2px;
     margin-bottom: 20px;
     text-align: center;
 
@@ -101,19 +101,19 @@ cursor: pointer;
 }
 
 .boton-modal{
-    padding: 10px 10px;
     width: 154px;
-    background-color: #afafaf;
-    color: black;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
+    background:  #D0C8F6;
+    margin: 20px;
+    padding: 10px
+    
     }
 .boton-modal label:hover{
-    background: #0a00ff;
-}
+    background: #B0A2F9;
+     
+    }
 #btn-modal{
     display: none;
+    
 }
 .container-modal{
     width: 100%;
@@ -133,18 +133,18 @@ cursor: pointer;
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    background-color: #afafaf;
+    background-color: #F3F1FF;
     border-radius: 4px;
     }
 .content-modal h5{
     margin-bottom: 15px;
-}
+    }
 .content-modal input{
     padding: 10px 10px;
     border-radius: 4px;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 375px;
-       
+           
 }
 .content-modal .btn-cerrar{
     width: 60%;
@@ -154,14 +154,14 @@ cursor: pointer;
 }
 .content-modal .btn-cerrar label{
     padding: 7px;
-    background-color: #0089ff;
-    color: #ffffff;
+    background-color: #D0C8F6;
+    color: #000000;
     border-radius: 4px;
     cursor: pointer;
     transition: all 300ms ease;
    }
 .content-modal .btn-cerrar label:hover{
-    background-color: #0a00ff
+    background-color: #B0A2F9
 }
 
 .fairlac{
