@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Cédula</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 <style>
 
   body{
@@ -131,11 +131,8 @@ cursor: pointer;
         text-decoration-line: none;
         color: #000000;
         padding: 20px 10px;
-        }
-    .up{
-        background: #F3F1FF;
     }
-    ul.tabs li a{
+    ul.tabs p{
     background:#D0C8F6;
     color: #000000;
     font-size: 18px;
@@ -143,14 +140,17 @@ cursor: pointer;
     padding: 5vh;
     width: 365px;
     }
-    ul.tabs li a:hover{   
+    ul.tabs p:hover{   
 background-color: #ffffff;
         cursor: pointer;}
-    .active{
-        background:#ffffff; 
+    
+    
+    [data-content]{
+        display: none;
     }
-    ul.tabs li a .tab-text{
-        margin-left: 8px;
+    .active [data-content]{
+        display: block;
+        background:#ffffff;
     }
         
 </style> 
@@ -177,50 +177,48 @@ background-color: #ffffff;
    </a>
 </nav>
 </div>
-<div class="tabladerecha">
-<div class="up">
+
+<div class="tabladerech">
 <ul class="tabs">
-<li><a href="tab1" class="fa-home"><span></span><span class="tab-text">0.Información del Expediente</span></a></li>
-<li><a href="#tab2" class="fa-home"><span></span><span class="tab-text">1.Requerimientos Específicos</span></a></li>
-<li><a href="#tab3" class="fa-home"><span ></span><span class="tab-text">2.Información General y de Contacto</span></a></li>
-<li><a href="#tab4" class="fa-home"><span></span><span class="tab-text">3.Información Sociodemográfica</span></a></li>
-<li><a href="#tab5" class="fa-home"><span></span><span class="tab-text">4.Datos de Empleo</span></a></li>
-<li><a href="#tab6" class="fa-home"><span></span><span class="tab-text">5.Interseccionalidad</span></a></li>
-<li><a href="#tab7" class="fa-home"><span></span><span class="tab-text">6.Motivo de Atención</span></a></li>
-<li><a href="#tab8" class="fa-home"><span></span><span class="tab-text">7.Antecedentes de Violencia</span></a></li>
-<li><a href="#tab9" class="fa-home"><span></span><span class="tab-text">8.Información General de la Persona Agresora</span></a></li>
-<li><a href="#tab10" class="fa-home"><span></span><span class="tab-text">9.Información Sociodemográfica PA</span></a></li>
-<li><a href="#tab11" class="fa-home"><span></span><span class="tab-text">10.Rasgos Fisicos de la Persona Agresora</span></a></li>
-<li><a href="#tab12" class="fa-home"><span></span><span class="tab-text">11.Red de Apoyo</span></a></li>
-<li><a href="#tab13" class="fa-home"><span></span><span class="tab-text">12.Trabajo Social</span></a></li>
-<li><a href="#tab14" class="fa-home"><span></span><span class="tab-text">13.Atención Psicológica</span></a></li>
-<li><a href="#tab15" class="fa-home"><span></span><span class="tab-text">14.Atención Jurídica</span></a></li>
-<li><a href="#tab16" class="fa-home"><span></span><span class="tab-text">15.Clasificación de Violencia</span></a></li>
-<li><a href="#tab17" class="fa-home"><span></span><span class="tab-text">16.Acciones Realizadas</span></a></li>
+<p data-target="#0.">0.Información del Expediente</p>
+<p data-target="#1.">1.Requerimientos Específicos</p>
+<p data-target="#2.">2.Información General y de Contacto</p>
+<p data-target="#3.">3.Información Sociodemográfica</p>
+<p data-target="#4.">4.Datos de Empleo</p>
+<p data-target="#5.">5.Interseccionalidad</p>
+<p data-target="#6.">6.Motivo de Atención</p>
+<p data-target="#7.">7.Antecedentes de Violencia</p>
+<p data-target="#8.">8.Información General de la Persona Agresora</p>
+<p data-target="#9.">9.Información Sociodemográfica PA</p>
+<p data-target="#10.">10.Rasgos Fisicos de la Persona Agresora</p>
+<p data-target="#11.">11.Red de Apoyo</p>
+<p data-target="#12.">12.Trabajo Social</p>
+<p data-target="#13.">13.Atención Psicológica</p>
+<p data-target="#14.">14.Atención Jurídica</p>
+<p data-target="#15.">15.Clasificación de Violencia</p>
+<p data-target="#16.">16.Acciones Realizadas</p>
 </ul>
 
-<div class="secciones">
-    <article id="tab1"><h1>0.1</h1></article>
-     <article id="tab2"><h1>0.2</h1></article>
-     <article id="tab3"><h1>0.3</h1></article>
-     <article id="tab4"><h1>0.4</h1></article>
-     <article id="tab5"><h1>0.5</h1></article>
-     <article id="tab6"><h1>0.6</h1></article>
-     <article id="tab7"><h1>0.7</h1></article>
-     <article id="tab8"><h1>0.8</h1></article>
-     <article id="tab9"><h1>0.9</h1></article>
-     <article id="tab10"><h1>10</h1></article>
-     <article id="tab11"><h1>11</h1></article>
-     <article id="tab12"><h1>12</h1></article>
-     <article id="tab13"><h1>13</h1></article>
-     <article id="tab14"><h1>14</h1></article>
-     <article id="tab15"><h1>15</h1></article>
-     <article id="tab16"><h1>16</h1></article>
-     <article id="tab16"><h1>17</h1></article>
+<div class="content">
+     <div data-content id="0.1"><h1>0.1</h1></div>
+     <div data-content id="0.2"><h1>0.2</h1></div>
+     <div data-content id="0.3"><h1>0.3</h1></div>
+     <div data-content id="0.4"><h1>0.4</h1></div>
+     <div data-content id="0.5"><h1>0.5</h1></div>
+     <div data-content id="0.6"><h1>0.6</h1></div>
+     <div data-content id="0.7"><h1>0.7</h1></div>
+     <div data-content id="0.8"><h1>0.8</h1></div>
+     <div data-content id="0.9"><h1>0.9</h1></div>
+     <div data-content id="10"><h1>10</h1></div>
+     <div data-content id="11"><h1>11</h1></div>
+     <div data-content id="12"><h1>12</h1></div>
+     <div data-content id="13"><h1>13</h1></div>
+     <div data-content id="14"><h1>14</h1></div>
+     <div data-content id="15"><h1>15</h1></div>
+     <div data-content id="16"><h1>16</h1></div>
+     <div data-content id="17"><h1>17</h1></div>
     </div>
     </div>
-    </div>
-
 
 
 <footer class="footer">
