@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cédula</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="main.js" defer></script>
+      
 <style>
 
   body{
@@ -116,43 +115,75 @@ padding-left: 60px
 background-color: #B0A2F9;
 cursor: pointer;
 }
-    .tabladerecha{
+    .container{
         background: #F3F1FF;
-        padding: 10px;
+        padding: 0px;
         margin-left: 80px;
+        border: 1px solid #B0A2F9;
+        font: normal normal normal 10px/18px Outfit;
+        height: 1427px;
+        padding-left: 0px;
         margin-right: 80px;
-        margin-bottom: 20px;
-        border: 1px solid #B0A2F9;
+        padding: 10px
+        
     }
-    .fa-home{
-        background: #F3F1FF;
-        font: normal normal normal 15px/18px Outfit;  
-        border: 1px solid #B0A2F9;
-        text-decoration-line: none;
-        color: #000000;
-        padding: 20px 10px;
-    }
-    ul.tabs p{
+.lbl-menu label{
     background:#D0C8F6;
     color: #000000;
     font-size: 18px;
     display: block;
     padding: 5vh;
     width: 365px;
+    transition: all 400ms ease;
     }
-    ul.tabs p:hover{   
-background-color: #ffffff;
+.lbl-menu :hover{   
+        background-color: #ffffff;
         cursor: pointer;}
-    
-    
-    [data-content]{
+    .content{
+        padding-left: 430px;
+        margin-top: -1427px;
+        
+    }
+    .content div{
+        position: absolute;
+        line-height: 1.800;
+        transition: all 600ms ease;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.90);
+        padding: 30px;
+        background: #F3F1FF;
+        padding-bottom: 40px;
+    }
+    #radio0,#radio1,#radio2,#radio3,#radio4,#radio5,#radio6,#radio7,#radio8,#radio9,#radio10,#radio11,#radio12,#radio13,#radio14,#radio15,#radio16{
         display: none;
     }
-    .active [data-content]{
-        display: block;
-        background:#ffffff;
-    }
+    #radio0:checked ~ .tab0,
+    #radio1:checked ~ .tab1,
+    #radio2:checked ~ .tab2,
+    #radio3:checked ~ .tab3,
+    #radio4:checked ~ .tab4,
+    #radio5:checked ~ .tab5,
+    #radio6:checked ~ .tab6,
+    #radio7:checked ~ .tab7,
+    #radio8:checked ~ .tab8,
+    #radio9:checked ~ .tab9,
+    #radio10:checked ~ .tab10,
+    #radio11:checked ~ .tab11,
+    #radio12:checked ~ .tab12,
+    #radio13:checked ~ .tab13, 
+    #radio14:checked ~ .tab14, 
+    #radio15:checked ~ .tab15,
+    #radio16:checked ~ .tab16{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1)
+    } 
+    
+
         
+    
+    
 </style> 
 </head>
 <header class="header">
@@ -178,47 +209,63 @@ background-color: #ffffff;
 </nav>
 </div>
 
-<div class="tabladerech">
-<ul class="tabs">
-<p data-target="#0.">0.Información del Expediente</p>
-<p data-target="#1.">1.Requerimientos Específicos</p>
-<p data-target="#2.">2.Información General y de Contacto</p>
-<p data-target="#3.">3.Información Sociodemográfica</p>
-<p data-target="#4.">4.Datos de Empleo</p>
-<p data-target="#5.">5.Interseccionalidad</p>
-<p data-target="#6.">6.Motivo de Atención</p>
-<p data-target="#7.">7.Antecedentes de Violencia</p>
-<p data-target="#8.">8.Información General de la Persona Agresora</p>
-<p data-target="#9.">9.Información Sociodemográfica PA</p>
-<p data-target="#10.">10.Rasgos Fisicos de la Persona Agresora</p>
-<p data-target="#11.">11.Red de Apoyo</p>
-<p data-target="#12.">12.Trabajo Social</p>
-<p data-target="#13.">13.Atención Psicológica</p>
-<p data-target="#14.">14.Atención Jurídica</p>
-<p data-target="#15.">15.Clasificación de Violencia</p>
-<p data-target="#16.">16.Acciones Realizadas</p>
-</ul>
-
+<div class="container">
+<div class="lbl-menu">
+<label for="radio0">0.Información del Expediente</label>
+<label for="radio1">1.Requerimientos Específicos</label>
+<label for="radio2">2.Información General y de Contacto</label>
+<label for="radio3">3.Información Sociodemográfica</label>
+<label for="radio4">4.Datos de Empleo</label>
+<label for="radio5">5.Interseccionalidad</label>
+<label for="radio6">6.Motivo de Atención</label>
+<label for="radio7">7.Antecedentes de Violencia</label>
+<label for="radio8">8.Información General de la Persona Agresora</label>
+<label for="radio9">9.Información Sociodemográfica PA</label>
+<label for="radio10">10.Rasgos Fisicos de la Persona Agresora</label>
+<label for="radio11">11.Red de Apoyo</label>
+<label for="radio12">12.Trabajo Social</label>
+<label for="radio13">13.Atención Psicológica</label>
+<label for="radio14">14.Atención Jurídica</label>
+<label for="radio15">15.Clasificación de Violencia</label>
+<label for="radio16">16.Acciones Realizadas</label>
+</div>
 <div class="content">
-     <div data-content id="0.1"><h1>0.1</h1></div>
-     <div data-content id="0.2"><h1>0.2</h1></div>
-     <div data-content id="0.3"><h1>0.3</h1></div>
-     <div data-content id="0.4"><h1>0.4</h1></div>
-     <div data-content id="0.5"><h1>0.5</h1></div>
-     <div data-content id="0.6"><h1>0.6</h1></div>
-     <div data-content id="0.7"><h1>0.7</h1></div>
-     <div data-content id="0.8"><h1>0.8</h1></div>
-     <div data-content id="0.9"><h1>0.9</h1></div>
-     <div data-content id="10"><h1>10</h1></div>
-     <div data-content id="11"><h1>11</h1></div>
-     <div data-content id="12"><h1>12</h1></div>
-     <div data-content id="13"><h1>13</h1></div>
-     <div data-content id="14"><h1>14</h1></div>
-     <div data-content id="15"><h1>15</h1></div>
-     <div data-content id="16"><h1>16</h1></div>
-     <div data-content id="17"><h1>17</h1></div>
-    </div>
-    </div>
+     <input type="radio" name="radio" id="radio0"> 
+     <div class="tab0"><h1>0.....</h1></div>
+     <input type="radio" name="radio" id="radio1"> 
+     <div class="tab1"><h1>0.1......</h1></div>
+     <input type="radio" name="radio" id="radio2"> 
+     <div class="tab2"><h1>0.2.......</h1></div>
+     <input type="radio" name="radio" id="radio3"> 
+     <div class="tab3"><h1>0.3......</h1></div>
+     <input type="radio" name="radio" id="radio4"> 
+     <div class="tab4"><h1>0.4.......</h1></div>
+     <input type="radio" name="radio" id="radio5"> 
+     <div class="tab5"><h1>0.5.......</h1></div>
+     <input type="radio" name="radio" id="radio6"> 
+     <div class="tab6"><h1>0.6.......</h1></div>
+     <input type="radio" name="radio" id="radio7"> 
+     <div class="tab7"><h1>0.7.......</h1></div>
+     <input type="radio" name="radio" id="radio8"> 
+     <div class="tab8"><h1>0.8.......</h1></div>
+     <input type="radio" name="radio" id="radio9">
+     <div class="tab9"><h1>0.9.......</h1></div>
+     <input type="radio" name="radio" id="radio10">
+     <div class="tab10"><h1>10.......</h1></div>
+     <input type="radio" name="radio" id="radio11">
+     <div class="tab11"><h1>11.......</h1></div>
+     <input type="radio" name="radio" id="radio12">
+     <div class="tab12"><h1>12.......</h1></div>
+     <input type="radio" name="radio" id="radio13">
+     <div class="tab13"><h1>13.......</h1></div>
+     <input type="radio" name="radio" id="radio14">
+     <div class="tab14"><h1>14.......</h1></div>
+     <input type="radio" name="radio" id="radio15">
+     <div class="tab15"><h1>15.......</h1></div>
+     <input type="radio" name="radio" id="radio16">
+     <div class="tab16"><h1>16.......</h1></div>
+</div>
+</div>
 
 
 <footer class="footer">
