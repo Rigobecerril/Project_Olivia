@@ -152,7 +152,6 @@ cursor: pointer;
         visibility: hidden;
         transform: scale(0.90);
         padding: 30px;
-        background: #F3F1FF;
         padding-bottom: 40px;
     }
     #radio0,#radio1,#radio2,#radio3,#radio4,#radio5,#radio6,#radio7,#radio8,#radio9,#radio10,#radio11,#radio12,#radio13,#radio14,#radio15,#radio16{
@@ -231,39 +230,84 @@ cursor: pointer;
 </div>
 <div class="content">
      <input type="radio" name="radio" id="radio0"> 
-     <div class="tab0"><h1>0.....</h1></div>
+     <div class="tab0"><h1>Información del Expediente</h1>
+     <li style="font-size: 20px">1.Área que atiende.</li>
+     <input id="psicologia" type="checkbox" name="área" value="psicologia">
+     <label style="font-size: 20px" for="psicologia">Psicología</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input id="Jurídico" type="checkbox" name="área" value="Jurídico">
+     <label style="font-size: 20px" for="Jurídico">Jurídico</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input id="Trabajo Social" type="checkbox" name="área" value="Trabajo Social">
+     <label style="font-size: 20px" for="Trabajo Social">Trabajo Social</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input id="Ministerial" type="checkbox" name="área" value="Ministerial">
+     <label style="font-size: 20px" for="Ministerial">Ministerial</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input id="Pericial" type="checkbox" name="área" value="Pericial">
+     <label style="font-size: 20px" for="Pericial">Pericial</label>
+     <br>
+     <input id="Consejería" type="checkbox" name="área" value="Consejería">
+     <label style="font-size: 20px" for="Consejería">Consejería</label>
+     <br>
+     <input id="Otra" type="checkbox" name="área" value="Otra">
+     <label style="font-size: 20px" for="Otra">Otra</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input placeholder="¿Cual?">
+     <li style="font-size: 20px">2.Tipo de Asesoría.</li>
+     <input id="Presencial" type="checkbox" name="área" value="Presencial">
+     <label style="font-size: 20px" for="Presencial">Presencial</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="Telefónica" type="checkbox" name="área" value="Telefónica">
+     <label style="font-size: 20px" for="Telefónica">Telefónica</label>
+     <br>
+     <input id="Otra" type="checkbox" name="área" value="Otra">
+     <label style="font-size: 20px" for="Otra">Otra</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input placeholder="¿Cual?">
+     <li style="font-size: 20px">3.¿Quién atiende?.</li>
+     <input placeholder="Parentezco">
+     <br>
+     <input id="Otra" type="checkbox" name="área" value="Otra">
+     <label style="font-size: 20px" for="Otra">Otra</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input placeholder="¿Quién?">
+     <li style="font-size: 20px">3.Espediente BANAVIM.</li>
+     <input placeholder="">
+    
+     </div>
      <input type="radio" name="radio" id="radio1"> 
-     <div class="tab1"><h1>0.1......</h1></div>
+     <div class="tab1"><h1>Requerimientos Específicos</h1></div>
      <input type="radio" name="radio" id="radio2"> 
-     <div class="tab2"><h1>0.2.......</h1></div>
+     <div class="tab2"><h1>Información General y de Contacto</h1></div>
      <input type="radio" name="radio" id="radio3"> 
-     <div class="tab3"><h1>0.3......</h1></div>
+     <div class="tab3"><h1>Información Sociodemográfica</h1></div>
      <input type="radio" name="radio" id="radio4"> 
-     <div class="tab4"><h1>0.4.......</h1></div>
+     <div class="tab4"><h1>Datos de Empleo</h1></div>
      <input type="radio" name="radio" id="radio5"> 
-     <div class="tab5"><h1>0.5.......</h1></div>
+     <div class="tab5"><h1>Interseccionalidad</h1></div>
      <input type="radio" name="radio" id="radio6"> 
-     <div class="tab6"><h1>0.6.......</h1></div>
+     <div class="tab6"><h1>Motivo de Atención</h1></div>
      <input type="radio" name="radio" id="radio7"> 
-     <div class="tab7"><h1>0.7.......</h1></div>
+     <div class="tab7"><h1>Antecedentes de Violencia</h1></div>
      <input type="radio" name="radio" id="radio8"> 
-     <div class="tab8"><h1>0.8.......</h1></div>
+     <div class="tab8"><h1>Información General de la Persona Agresora</h1></div>
      <input type="radio" name="radio" id="radio9">
-     <div class="tab9"><h1>0.9.......</h1></div>
+     <div class="tab9"><h1>Información Sociodemográfica PA</h1></div>
      <input type="radio" name="radio" id="radio10">
-     <div class="tab10"><h1>10.......</h1></div>
+     <div class="tab10"><h1>Rasgos Fisicos de la Persona Agresora</h1></div>
      <input type="radio" name="radio" id="radio11">
-     <div class="tab11"><h1>11.......</h1></div>
+     <div class="tab11"><h1>Red de Apoyo</h1></div>
      <input type="radio" name="radio" id="radio12">
-     <div class="tab12"><h1>12.......</h1></div>
+     <div class="tab12"><h1>Trabajo Social</h1></div>
      <input type="radio" name="radio" id="radio13">
-     <div class="tab13"><h1>13.......</h1></div>
+     <div class="tab13"><h1>Atención Psicológica</h1></div>
      <input type="radio" name="radio" id="radio14">
-     <div class="tab14"><h1>14.......</h1></div>
+     <div class="tab14"><h1>Atención Jurídica</h1></div>
      <input type="radio" name="radio" id="radio15">
-     <div class="tab15"><h1>15.......</h1></div>
+     <div class="tab15"><h1>Clasificación de Violencia</h1></div>
      <input type="radio" name="radio" id="radio16">
-     <div class="tab16"><h1>16.......</h1></div>
+     <div class="tab16"><h1>.Acciones Realizadas</h1></div>
 </div>
 </div>
 
